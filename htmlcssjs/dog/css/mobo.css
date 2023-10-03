@@ -1,0 +1,88 @@
+/*容器触发弹性盒子*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*头部*/
+header{
+    width: auto;   /*可以不写*/
+    height: 46px;
+    background-color: #59acac;
+    font-size: 19px;
+    text-align: center;
+    line-height: 46px;
+    color: white;
+}
+/*尾部*/
+footer{
+    height: 46px;
+    border-top: 1px  solid gray;
+    background-color: #59acac;;
+    font-size: 19px;
+    text-align: center;
+    line-height: 46px;
+    color: white;
+}
+/*主体*/
+section{
+    flex: 1;
+}
+nav{
+    height: 43px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px  17px;
+    line-height: 43px;
+}
+nav>span:nth-child(1){
+    color: #555;
+    font-size: 14px;
+}
+nav>span:nth-child(2){
+    color: #00b38a;
+    font-size: 13px;
+    width: 85px;
+    height: 30px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+    align-self: center;
+}
+main{
+    height: 90px;
+    border-bottom: 1px solid gray;
+    display: flex;
+}
+main>img{
+    width: 60px;
+    height: 60px;
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+main>div{
+    flex: 1;
+}
+main>span{
+    color: #00b38a;
+    font-weight: bold;
+    font-size: 13px;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    align-self: center;
+    margin-right: 15px;
+}
+main>div>p:nth-child(1){
+    font-size: 17px;
+    font-weight: bold;
+}
+main>div>p:nth-child(2){
+    font-size: 12px;
+}
+main>div>p:nth-child(3){
+    font-size: 12px;
+}
